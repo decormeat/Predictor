@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* Учитываем padding и border в ширине элементов */
+    box-sizing: border-box;
 }
 
 body {
@@ -86,7 +86,7 @@ p {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
-    width: 100%; /* Убедимся, что секция не превышает ширину viewport */
+    width: 100%;
 }
 
 .live-prediction {
@@ -107,7 +107,7 @@ p {
 .feature-list {
     list-style: none;
     padding: 0;
-    margin: 0; /* Убираем внешние отступы */
+    margin: 0;
 }
 
 .feature-list li {
@@ -139,20 +139,20 @@ p {
 }
 
 .league-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     background: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5); /* Постоянное свечение */
+    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: glow 1.5s infinite alternate; /* Добавляем анимацию свечения */
+    animation: glow 1.5s infinite alternate;
 }
 
 .league-logo:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7); /* Усиливаем свечение при наведении */
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7);
 }
 
 .cta-button {
@@ -187,12 +187,12 @@ p {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
-    width: 100%; /* Убедимся, что секция не превышает ширину viewport */
+    width: 100%;
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -221,7 +221,7 @@ p {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
-    width: 100%; /* Убедимся, что секция не превышает ширину viewport */
+    width: 100%;
 }
 
 .review-list {
@@ -296,14 +296,20 @@ footer {
     .features, .stats, .reviews { 
         margin: 40px auto; 
         padding: 0 15px; 
-        max-width: 100%; /* Убираем фиксированную ширину */
+        max-width: 100%;
     }
     .feature-list li { font-size: 1.2em; padding: 15px; }
-    .league-logo { width: 60px; height: 60px; }
+    .league-logo { 
+        width: 70px;
+        height: 70px;
+    }
     .cta-button { font-size: 1.4em; padding: 15px 35px; }
     .cta-subtext { font-size: 0.8em; }
     .stat-item { padding: 15px; }
     .stat-item span { font-size: 1.5em; }
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
     .review-item { padding: 15px; }
     footer { padding: 15px; font-size: 0.8em; }
     .disclaimer { font-size: 0.7em; }
@@ -321,26 +327,29 @@ footer {
     .features, .stats, .reviews { 
         margin: 30px auto; 
         padding: 0 10px; 
-        max-width: 100%; /* Убираем фиксированную ширину */
+        max-width: 100%;
     }
     .feature-list li { 
         font-size: 1em; 
         padding: 12px; 
         margin: 8px 0; 
     }
-    .league-logo { width: 50px; height: 50px; }
+    .league-logo { 
+        width: 60px;
+        height: 60px;
+    }
     .leagues {
-        gap: 10px; /* Уменьшаем расстояние между логотипами */
+        gap: 10px;
     }
     .cta-button { font-size: 1.2em; padding: 12px 25px; }
     .cta-subtext { font-size: 0.7em; }
     .stat-item { padding: 12px; }
     .stat-item span { font-size: 1.2em; }
     .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Уменьшаем минимальную ширину плиток */
+        grid-template-columns: 1fr;
     }
     .review-list {
-        grid-template-columns: 1fr; /* Одна колонка для отзывов */
+        grid-template-columns: 1fr;
     }
     .review-item { padding: 12px; }
     footer { padding: 10px; font-size: 0.7em; position: static; }
@@ -356,9 +365,15 @@ footer {
     .live-users { font-size: 1.3em; }
     .live-prediction { font-size: 1.5em; }
     .feature-list li { font-size: 1.6em; padding: 25px; }
-    .league-logo { width: 90px; height: 90px; }
+    .league-logo { 
+        width: 110px;
+        height: 110px;
+    }
     .cta-button { font-size: 1.8em; padding: 20px 50px; }
     .cta-subtext { font-size: 1em; }
     .stat-item span { font-size: 2.5em; }
     .disclaimer { font-size: 0.9em; }
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 }
