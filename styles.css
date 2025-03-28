@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Учитываем padding и border в ширине элементов */
 }
 
 body {
@@ -86,7 +86,7 @@ p {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
-    width: 100%;
+    width: 100%; /* Убедимся, что секция не превышает ширину viewport */
 }
 
 .live-prediction {
@@ -107,7 +107,7 @@ p {
 .feature-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0; /* Убираем внешние отступы */
 }
 
 .feature-list li {
@@ -145,14 +145,14 @@ p {
     background: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
+    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5); /* Постоянное свечение */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: glow 1.5s infinite alternate;
+    animation: glow 1.5s infinite alternate; /* Добавляем анимацию свечения */
 }
 
 .league-logo:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7); /* Усиливаем свечение при наведении */
 }
 
 .cta-button {
@@ -187,7 +187,7 @@ p {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
-    width: 100%;
+    width: 100%; /* Убедимся, что секция не превышает ширину viewport */
 }
 
 .stats-grid {
@@ -221,7 +221,7 @@ p {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
-    width: 100%;
+    width: 100%; /* Убедимся, что секция не превышает ширину viewport */
 }
 
 .review-list {
@@ -296,7 +296,7 @@ footer {
     .features, .stats, .reviews { 
         margin: 40px auto; 
         padding: 0 15px; 
-        max-width: 100%;
+        max-width: 100%; /* Убираем фиксированную ширину */
     }
     .feature-list li { font-size: 1.2em; padding: 15px; }
     .league-logo { width: 60px; height: 60px; }
@@ -321,7 +321,7 @@ footer {
     .features, .stats, .reviews { 
         margin: 30px auto; 
         padding: 0 10px; 
-        max-width: 100%;
+        max-width: 100%; /* Убираем фиксированную ширину */
     }
     .feature-list li { 
         font-size: 1em; 
@@ -330,17 +330,17 @@ footer {
     }
     .league-logo { width: 50px; height: 50px; }
     .leagues {
-        gap: 10px;
+        gap: 10px; /* Уменьшаем расстояние между логотипами */
     }
     .cta-button { font-size: 1.2em; padding: 12px 25px; }
     .cta-subtext { font-size: 0.7em; }
     .stat-item { padding: 12px; }
     .stat-item span { font-size: 1.2em; }
     .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Уменьшаем минимальную ширину плиток */
     }
     .review-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Одна колонка для отзывов */
     }
     .review-item { padding: 12px; }
     footer { padding: 10px; font-size: 0.7em; position: static; }
