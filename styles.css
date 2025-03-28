@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -7,11 +11,13 @@ body {
     text-align: center;
     overflow-x: hidden;
 }
+
 header {
     position: relative;
     height: 400px;
     overflow: hidden;
 }
+
 .parallax-bg {
     position: absolute;
     top: 0;
@@ -22,11 +28,13 @@ header {
     z-index: -1;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
+
 .header-content {
     position: relative;
     padding: 60px 20px;
     animation: fadeIn 1s ease-in;
 }
+
 h1 {
     margin: 0;
     font-size: 3.5em;
@@ -37,6 +45,7 @@ h1 {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     animation: slideIn 1s ease-out;
 }
+
 h2 {
     font-size: 2em;
     font-weight: 700;
@@ -44,6 +53,7 @@ h2 {
     margin: 40px 0 20px;
     text-transform: uppercase;
 }
+
 p {
     font-size: 1.5em;
     font-weight: 400;
@@ -51,6 +61,7 @@ p {
     letter-spacing: 1px;
     animation: fadeIn 1.5s ease-in;
 }
+
 .countdown {
     margin-top: 20px;
     font-size: 1.2em;
@@ -58,21 +69,26 @@ p {
     color: #e74c3c;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 .live-users {
     margin-top: 10px;
     font-size: 1.1em;
     font-weight: 400;
     color: #ecf0f1;
 }
+
 .live-users span {
     color: #e74c3c;
     font-weight: 700;
 }
+
 .features {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
+    width: 100%;
 }
+
 .live-prediction {
     background: rgba(231, 76, 60, 0.1);
     padding: 15px;
@@ -82,14 +98,18 @@ p {
     font-weight: 400;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .live-prediction span {
     color: #e74c3c;
     font-weight: 700;
 }
+
 .feature-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
+
 .feature-list li {
     background: linear-gradient(45deg, rgba(231, 76, 60, 0.2), rgba(192, 57, 43, 0.1));
     padding: 20px;
@@ -104,10 +124,12 @@ p {
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 .feature-list li.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 .leagues {
     margin: 20px 0;
     display: flex;
@@ -115,6 +137,7 @@ p {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .league-logo {
     width: 80px;
     height: 80px;
@@ -122,13 +145,16 @@ p {
     background: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: glow 1.5s infinite alternate;
 }
+
 .league-logo:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7);
 }
+
 .cta-button {
     display: inline-block;
     background: linear-gradient(45deg, #e74c3c, #c0392b);
@@ -144,26 +170,32 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
     animation: pulse 2s infinite;
 }
+
 .cta-button:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(231, 76, 60, 0.7);
 }
+
 .cta-subtext {
     font-size: 0.9em;
     font-weight: 400;
     color: #bdc3c7;
     margin: 5px 0 0;
 }
+
 .stats {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
+    width: 100%;
 }
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
+
 .stat-item {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -171,10 +203,12 @@ p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .stat-item:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(231, 76, 60, 0.5);
 }
+
 .stat-item span {
     display: block;
     font-size: 2em;
@@ -182,16 +216,20 @@ p {
     color: #e74c3c;
     margin-bottom: 10px;
 }
+
 .reviews {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
+    width: 100%;
 }
+
 .review-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .review-item {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -199,15 +237,18 @@ p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     text-align: left;
 }
+
 .review-item p {
     font-size: 1.1em;
     margin: 0 0 10px;
     font-style: italic;
 }
+
 .review-item span {
     font-size: 0.9em;
     color: #bdc3c7;
 }
+
 footer {
     background: #111;
     padding: 20px;
@@ -215,24 +256,34 @@ footer {
     font-weight: 400;
     width: 100%;
 }
+
 .disclaimer {
     font-size: 0.8em;
     color: #7f8c8d;
     margin: 10px 0 0;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 @keyframes slideIn {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.03); }
     100% { transform: scale(1); }
 }
+
+@keyframes glow {
+    0% { box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5); }
+    100% { box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7); }
+}
+
 @media (max-width: 768px) {
     header { height: 350px; }
     .header-content { padding: 40px 15px; }
@@ -242,7 +293,11 @@ footer {
     .countdown { font-size: 1em; }
     .live-users { font-size: 0.9em; }
     .live-prediction { font-size: 1.1em; padding: 10px; }
-    .features, .stats, .reviews { margin: 40px auto; padding: 0 15px; }
+    .features, .stats, .reviews { 
+        margin: 40px auto; 
+        padding: 0 15px; 
+        max-width: 100%;
+    }
     .feature-list li { font-size: 1.2em; padding: 15px; }
     .league-logo { width: 60px; height: 60px; }
     .cta-button { font-size: 1.4em; padding: 15px 35px; }
@@ -253,6 +308,7 @@ footer {
     footer { padding: 15px; font-size: 0.8em; }
     .disclaimer { font-size: 0.7em; }
 }
+
 @media (max-width: 480px) {
     header { height: 300px; }
     .header-content { padding: 30px 10px; }
@@ -262,17 +318,35 @@ footer {
     .countdown { font-size: 0.9em; }
     .live-users { font-size: 0.8em; }
     .live-prediction { font-size: 0.9em; padding: 8px; }
-    .features, .stats, .reviews { margin: 30px auto; padding: 0 10px; }
-    .feature-list li { font-size: 1em; padding: 12px; margin: 8px 0; }
+    .features, .stats, .reviews { 
+        margin: 30px auto; 
+        padding: 0 10px; 
+        max-width: 100%;
+    }
+    .feature-list li { 
+        font-size: 1em; 
+        padding: 12px; 
+        margin: 8px 0; 
+    }
     .league-logo { width: 50px; height: 50px; }
+    .leagues {
+        gap: 10px;
+    }
     .cta-button { font-size: 1.2em; padding: 12px 25px; }
     .cta-subtext { font-size: 0.7em; }
     .stat-item { padding: 12px; }
     .stat-item span { font-size: 1.2em; }
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .review-list {
+        grid-template-columns: 1fr;
+    }
     .review-item { padding: 12px; }
     footer { padding: 10px; font-size: 0.7em; position: static; }
     .disclaimer { font-size: 0.6em; }
 }
+
 @media (min-width: 1200px) {
     header { height: 450px; }
     h1 { font-size: 4em; }
